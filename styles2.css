@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background{
+  background-color: #3a630d;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  left: calc(50% - 225px);
+  top: calc(50% - 225px);
+
+}
+
+.grid{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(2,200px) / repeat(2,200px);
+  place-content: center;
+  gap: 50px;
+  z-index: 10;
+ 
+}
+.item{
+  display: grid;
+  background-color: #add901;
+  place-items: end;
+  z-index: 10;
+}
+
+.item div{
+  background-color: #268201;
+  width: 60px;
+  height: 100px;
+}
